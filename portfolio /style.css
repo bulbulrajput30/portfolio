@@ -1,0 +1,152 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+/* Basic Box Model */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color:#e91e63;            color: #111;
+    line-height: 1.6;
+}
+
+
+/* Header */
+header {
+    background-color:#8e44ad;
+    color: white;
+    text-align: center;
+
+    padding: 40px 20px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+
+/* Main */
+main {
+    width: 90%;
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+
+/* Sections */
+section {
+    background-color: white;
+
+    padding: 25px;
+    margin-bottom: 25px;
+
+    border: 1px solid #ddd;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #111;
+    margin-bottom: 15px;
+}
+
+
+/* Profile Image */
+section img {
+    display: block;
+
+    width: 200px;
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 1px solid #4f46e5;
+
+    margin: 15px auto;
+}
+
+
+/* Hobbies and Skills */
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-family: inherit;
+}
+
+textarea {
+    height: 100px;
+}
+
+
+/* Button */
+button {
+    padding: 12px;
+
+    background-color: #4f46e5;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3730a3;
+}
+
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+    margin-top: 30px;
+}
+section img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 0%;
+}
