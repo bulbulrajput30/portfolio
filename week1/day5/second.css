@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 30px;
+}
+
+form {
+    width: 300px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+p {
+    color: red;
+    text-align: left;
+    margin: 5px 0;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+}

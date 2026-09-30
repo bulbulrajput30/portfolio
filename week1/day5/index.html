@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Buttons</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 id="text">Interactive Text</h1>
+
+    <h3>Change Text Color</h3>
+
+    <button onclick="changeColor('red')">RED</button>
+    <button onclick="changeColor('green')">GREEN</button>
+    <button onclick="changeColor('blue')">BLUE</button>
+
+
+    <h3>Change Font Family</h3>
+
+    <select onchange="changeFont(this.value)">
+        <option value="Arial">Arial</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Times New Roman">Times New Roman</option>
+    </select>
+
+
+    <h3>Change Font Size</h3>
+
+    <button onclick="increaseSize()">A+</button>
+    <button onclick="decreaseSize()">A-</button>
+
+
+    <h3>Font Style</h3>
+
+    <button
+        onmouseover="makeBold()"
+        onmouseout="normalText()">
+        Bold
+    </button>
+
+    <button
+        onmouseover="makeItalic()"
+        onmouseout="normalText()">
+        Italic
+    </button>
+
+    <button
+        onmouseover="makeUnderline()"
+        onmouseout="normalText()">
+        Underline
+    </button>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

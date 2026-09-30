@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ES6 JavaScript Day 1</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #output {
+            background: white;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: black;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>ES6 JavaScript Day 1</h1>
+
+    <div id="output"></div>
+
+
+    <script>
+
+        const output = document.getElementById("output");
+
+
+        // 1. Const
+        const studentName = "Priya";
+        const course = "JavaScript Mastery";
+
+        output.innerHTML += `
+            <h2>1. Const</h2>
+            <p>Student Name: ${studentName}</p>
+            <p>Course: ${course}</p>
+        `;
+
+
+        // 2. Arrow Function
+        const greet = (name) => {
+            return `Hello ${name}!`;
+        };
+
+        output.innerHTML += `
+            <h2>2. Arrow Function</h2>
+            <p>${greet(studentName)}</p>
+        `;
+
+
+        // 3. Object Destructuring
+        const student = {
+            name: "Rahul",
+            age: 20,
+            course: "Web Development"
+        };
+
+        const {
+            name,
+            age,
+            course: studentCourse
+        } = student;
+
+        output.innerHTML += `
+            <h2>3. Object Destructuring</h2>
+            <p>Name: ${name}</p>
+            <p>Age: ${age}</p>
+            <p>Course: ${studentCourse}</p>
+        `;
+
+
+        // 4. Array Destructuring
+        const colors = ["Red", "Green", "Blue"];
+
+        const [
+            firstColor,
+            secondColor,
+            thirdColor
+        ] = colors;
+
+        output.innerHTML += `
+            <h2>4. Array Destructuring</h2>
+            <p>First: ${firstColor}</p>
+            <p>Second: ${secondColor}</p>
+            <p>Third: ${thirdColor}</p>
+        `;
+
+
+        // 5. Spread Operator
+        const fruits1 = ["Apple", "Banana"];
+        const fruits2 = ["Mango", "Orange"];
+
+        const allFruits = [
+            ...fruits1,
+            ...fruits2
+        ];
+
+        output.innerHTML += `
+            <h2>5. Spread Operator</h2>
+            <p>Fruits: ${allFruits.join(", ")}</p>
+        `;
+
+
+        // 6. Rest Operator
+        const addNumbers = (...numbers) => {
+            return numbers.reduce(
+                (sum, number) => sum + number,
+                0
+            );
+        };
+
+        output.innerHTML += `
+            <h2>6. Rest Operator</h2>
+            <p>Sum: ${addNumbers(10, 20, 30, 40)}</p>
+        `;
+
+
+        // 7. Template Literal
+        const message =
+            `Hello ${studentName}! Welcome to ${course}.`;
+
+        output.innerHTML += `
+            <h2>7. Template Literal</h2>
+            <p>${message}</p>
+        `;
+
+
+        // Final
+        output.innerHTML += `
+            <h2>Completed</h2>
+            <p>All ES6 features successfully completed!</p>
+        `;
+
+    </script>
+
+</body>
+
+</html>
